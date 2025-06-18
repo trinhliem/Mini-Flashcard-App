@@ -4,6 +4,7 @@ import './components/Flashcard.css';
 
 const cardSet = {
   title: 'Data Structures and Algorithms in C++',
+  description: 'A deck covering all DSA topics from the UCI ICS 46 class',
   cards: [
     {
       id: 1,
@@ -106,6 +107,7 @@ const App = () => {
   return (
     <div className="app">
       <h1>{cardSet.title}</h1>
+      <h3>{cardSet.description}</h3>
       <p>Total Cards: {cardSet.cards.length}</p>
       <div className="card-grid">
         <Flashcard key={cardSet.cards[currentIndex].id} {...cardSet.cards[currentIndex]} />
