@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Noto+Sans&family=Noto+Sans+JP&family=Noto+Sans+KR&family=Noto+Sans+SC&display=swap');
+
+
+:root {
+  --font-body: 'Noto Sans', 'Noto Sans JP', 'Noto Sans KR', 'Noto Sans SC', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-color: #ebebeb;
+  --color-default: #e2e3e5;
+  --background-color: #272727;
+  --button-default: #7d52ad;
+  --button-hover: #573183;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--font-color);
+  padding: 0;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+.app {
+  max-width: 900px;
+  width: 100%;
+}
+
+.card-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.card-nav button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: var(--button-default);
+  color: var(--font-body);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card-nav button:hover {
+  background-color: var(--button-hover);
+}
+
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.card-grid {
+  display: flex;
+  justify-content: center;
+}
+
+.card-progress {
+  margin: 0.5rem 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #dddddd;
+  text-align: center;
+}
